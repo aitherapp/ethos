@@ -1,6 +1,6 @@
 {
-  "name": "CipherNexus P2P",
-  "short_name": "CipherNexus",
+  "name": "ETHOS",
+  "short_name": "ETHOS",
   "description": "Secure, E2EE P2P messaging and file transfer platform.",
   "start_url": "./",
   "display": "standalone",

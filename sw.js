@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ethos-v3.0.6'; // Increment for cache busting
+const CACHE_NAME = 'ethos-v3.0.7'; // Increment for cache busting
 const ASSETS = [
   './',
   './index.html',
@@ -25,13 +25,20 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests for caching
-  if (event.request.method !== 'GET') return;
-
   const url = new URL(event.request.url);
-  
-  // Network first for index and manifest to handle GitHub Pages caching
-  if (url.pathname.endsWith('/') || url.pathname.endsWith('index.html') || url.pathname.endsWith('manifest.webmanifest')) {
+
+  // Bypass service worker for WebSocket connections, navigations, and non-GET
+  if (event.request.method !== 'GET' || 
+      event.request.headers.get('upgrade')?.toLowerCase() === 'websocket' ||
+      url.protocol === 'ws:' || url.protocol === 'wss:') {
+    return;
+  }
+
+  // Network first for HTML pages and manifest
+  if (event.request.mode === 'navigate' || 
+      url.pathname.endsWith('/') || 
+      url.pathname.endsWith('index.html') || 
+      url.pathname.endsWith('manifest.webmanifest')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
@@ -44,11 +51,13 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Bypass cache for discovery/signaling nodes
-  if (url.hostname.includes('iroh') || url.hostname.includes('pkarr') || url.hostname.includes('nostr')) {
-    return;
-  }
+   // Bypass cache for relay & signaling hosts and CORS proxies
+   const bypassHosts = ['nostr', 'relay', 'damus', 'mom', 'nos', 'l', 'pkarr', 'iroh', 'dht', 'corsproxy', 'allorigins'];
+   if (bypassHosts.some(host => url.hostname.includes(host))) {
+     return;
+   }
 
+  // Cache first for static assets
   event.respondWith(
     caches.match(event.request).then((response) => {
       return response || fetch(event.request);

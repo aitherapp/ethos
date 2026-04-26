@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ethos-v3.0.7'; // Increment for cache busting
+const CACHE_NAME = 'ethos-v3.0.9'; // Increment for cache busting
 const ASSETS = [
   './',
   './index.html',

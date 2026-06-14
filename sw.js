@@ -1,8 +1,9 @@
-const CACHE_NAME = 'ethos-v3.1.37'; // Increment for cache busting
+const CACHE_NAME = 'ethos-v3.1.39'; // Increment for cache busting
 const ASSETS = [
   './',
   './index.html',
-  './manifest.webmanifest'
+  './manifest.webmanifest',
+  './ethos-icon.svg'
 ];
 
 self.addEventListener('install', (event) => {

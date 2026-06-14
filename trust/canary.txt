@@ -1,0 +1,26 @@
+ETHOS Warrant Canary
+
+Statement date: 2026-06-14
+Expected next update: 2026-06-21
+Update cadence: Weekly
+
+As of 2026-06-14, ETHOS has not been compelled by any government,
+court, agency, or other authority to:
+
+- Add or preserve a backdoor in ETHOS.
+- Disclose ETHOS users' encryption keys or private cryptographic material.
+- Weaken, bypass, or compromise ETHOS end-to-end encryption.
+- Deliver a targeted malicious build to a user or group of users.
+- Suppress truthful public information about a compromise of ETHOS privacy.
+
+This canary is a transparency signal, not a guarantee. It should be read
+together with the public cryptographic design note, release manifest,
+SHA-256 sums, and GitHub artifact attestations for the public web app.
+
+The source code used to build ETHOS is source-available to supporters with
+read-only private repository access. Public users can verify published
+trust artifacts and release provenance; supporters can additionally inspect
+source and reproduce release builds.
+
+If this canary is not updated by the expected date, users should treat that
+as a signal to pause and ask why before relying on new ETHOS releases.

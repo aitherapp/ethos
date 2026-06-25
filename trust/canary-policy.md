@@ -27,11 +27,20 @@ builds publish:
 - `trust/canary.txt`
 - `trust/release-manifest.json`
 - `trust/SHA256SUMS`
-- GitHub artifact attestations for the public build artifact, when repository
-  support is available
 
-This means the canary is tied to the public release provenance. It is not a
-separate maintainer GPG or minisign signature.
+The canary is tied to the public release provenance through its SHA-256 hash
+in `SHA256SUMS` and `release-manifest.json`.
+
+## How To Verify
+
+1. Open `/trust/canary.txt`, `/trust/SHA256SUMS`, and
+   `/trust/release-manifest.json` from the same public ETHOS release.
+2. Find the `trust/canary.txt` entry in `SHA256SUMS`.
+3. Compute the SHA-256 hash of `canary.txt` and compare it to that entry.
+4. Confirm the statement date and expected next update date are current.
+
+If the hash does not match, or the canary is late or materially weaker than
+before, treat that as a reason to pause before relying on a new ETHOS release.
 
 ## Limits
 

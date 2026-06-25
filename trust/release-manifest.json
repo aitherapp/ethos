@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-25T11:49:03.933Z",
+  "generatedAt": "2026-06-25T12:11:55.358Z",
   "source": {
     "repository": "aitherapp/ethos-core",
-    "commit": "223e6a59bd47a03c4b2e221b3c95da460bae6a20",
+    "commit": "a3d4c1ba7f9cec634632bcabadaaa165bd13cb19",
     "ref": "main"
   },
   "build": {
     "node": "v20.20.2",
     "npm": "10.8.2",
-    "runId": "28167849478",
+    "runId": "28169064436",
     "runAttempt": "1",
-    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/28167849478"
+    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/28169064436"
   },
   "lockfile": {
     "path": "package-lock.json",
-    "sha256": "4858d224680522c8831c9321b4aeb4f820d6538db44ac86271515e8597c32504"
+    "sha256": "2f39012d0788270f95c3e21bf98ea2decbddda42debba5e47915ef0842828860"
   },
   "artifacts": [
     {
-      "path": "assets/__vite-browser-external-_HE0B01P.js",
-      "sha256": "4e19a307bb44b2c9beec97e39d569d09066de000521744c29a6b95bdc477b667",
+      "path": "assets/__vite-browser-external-B33xH071.js",
+      "sha256": "73b6f34c6de31877be1aab58433096e6d1b326e5be4892452a3b1c41cd626dec",
       "bytes": 57
     },
     {
-      "path": "assets/App-frjHgzUZ.js",
-      "sha256": "f37f01da26d9b30ef1ae9839051a724537790c84f318f7837e9ba6b3f397e55c",
-      "bytes": 1017065
+      "path": "assets/App-BF5rGjlG.js",
+      "sha256": "c9519aaaee3f387aaa5ebe485c78b3f6fae41fd782fa79e99477893afe5dc560",
+      "bytes": 1017320
     },
     {
       "path": "assets/index-B-Hes5g2.css",
@@ -34,8 +34,8 @@
       "bytes": 49323
     },
     {
-      "path": "assets/index-BuyNC3qs.js",
-      "sha256": "fe0275ce6a8c4c0ea1986a7ca4d634173b8776f0294a1c8ed9eceb94cfb9ce55",
+      "path": "assets/index-CSsgTzJO.js",
+      "sha256": "731e488e50832552bb1c1f2fc1f220b478d46e4e3fdf42a201c20d98551cb771",
       "bytes": 240530
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "5a42a7f95f0f87b80b546a35bdd13eae33a3fe2076b5f66ddeca6d2b38427721",
+      "sha256": "c0efe3a90c50cd24486a3f0a1050b315f44a006564423f8603dbd3a09ac5ba91",
       "bytes": 2436
     },
     {
@@ -55,18 +55,18 @@
     },
     {
       "path": "sw.js",
-      "sha256": "aab2a2624e53730a23a2118e1ed3cc42b04c3b080f72caa951450f5e6fd3bb8f",
+      "sha256": "d78634f9c3564355c3ae27b16f42e48065e9038cd009a560df9d4529f5c02e36",
       "bytes": 1927
     },
     {
       "path": "trust/canary-policy.md",
-      "sha256": "357be48f60d5972d8891a32bac799a777a8aa413318c130e970f5c8b2826dfce",
-      "bytes": 1617
+      "sha256": "9809f0900295dca746d38531f0daf41d405c9b30b7450cb82f6798b672d4f1fe",
+      "bytes": 2015
     },
     {
       "path": "trust/canary.txt",
-      "sha256": "0e22e884f744a28ddc0a2abe6c7f09cfcaceb2bb28c7e1f00289760e4fce3016",
-      "bytes": 1188
+      "sha256": "e40b0069a1c75a72ef9f63e0bfd3ecf27cea3c6be9ebf6722073bd70e5b63175",
+      "bytes": 1677
     },
     {
       "path": "trust/cryptographic-design.md",

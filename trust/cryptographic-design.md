@@ -95,12 +95,11 @@ The public web app publishes transparency artifacts that anyone can inspect:
 - SHA-256 release hashes.
 - GitHub artifact attestations, when repository support is available.
 
-The source code used to build the app is source-available to supporters with
-read-only private repository access. Supporters can inspect the implementation
-and reproduce release builds using the public release receipt.
+The source code is published on GitHub at https://github.com/aitherapp/ethos-core.
+Anyone can inspect the implementation and reproduce release builds using the
+public release receipt.
 
-ETHOS should not be described as fully open source while its build source
-remains private.
+ETHOS is licensed under AGPL-3.0.
 
 ## Audit Status
 

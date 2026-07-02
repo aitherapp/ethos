@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-25T12:11:55.358Z",
+  "generatedAt": "2026-07-02T10:46:29.513Z",
   "source": {
     "repository": "aitherapp/ethos-core",
-    "commit": "a3d4c1ba7f9cec634632bcabadaaa165bd13cb19",
+    "commit": "fb8c6c9ae6e1ad72e6caf13db7286c759d2989fb",
     "ref": "main"
   },
   "build": {
     "node": "v20.20.2",
     "npm": "10.8.2",
-    "runId": "28169064436",
+    "runId": "28584116165",
     "runAttempt": "1",
-    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/28169064436"
+    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/28584116165"
   },
   "lockfile": {
     "path": "package-lock.json",
-    "sha256": "2f39012d0788270f95c3e21bf98ea2decbddda42debba5e47915ef0842828860"
+    "sha256": "c27e3dd704c016aa3508744965529788f47ccc7ff31e241883cdb65e002122f7"
   },
   "artifacts": [
     {
-      "path": "assets/__vite-browser-external-B33xH071.js",
-      "sha256": "73b6f34c6de31877be1aab58433096e6d1b326e5be4892452a3b1c41cd626dec",
+      "path": "assets/__vite-browser-external-DBzq3ZD5.js",
+      "sha256": "eda4484d67236943503fb70f8ff38b71a44e6024281dccf8f942216fe521ead8",
       "bytes": 57
     },
     {
-      "path": "assets/App-BF5rGjlG.js",
-      "sha256": "c9519aaaee3f387aaa5ebe485c78b3f6fae41fd782fa79e99477893afe5dc560",
-      "bytes": 1017320
+      "path": "assets/App-CyZuX3kA.js",
+      "sha256": "209bc1bac4b7f210409696fb564c663c764c0066b14457c9898d0e917ffd01f5",
+      "bytes": 1017316
     },
     {
       "path": "assets/index-B-Hes5g2.css",
@@ -34,8 +34,8 @@
       "bytes": 49323
     },
     {
-      "path": "assets/index-CSsgTzJO.js",
-      "sha256": "731e488e50832552bb1c1f2fc1f220b478d46e4e3fdf42a201c20d98551cb771",
+      "path": "assets/index-Bu8QYUj2.js",
+      "sha256": "aca6294d05ab82285977a6e34c7d25a3f43d080bb33d0d0b6ebf973d27f782f1",
       "bytes": 240530
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "c0efe3a90c50cd24486a3f0a1050b315f44a006564423f8603dbd3a09ac5ba91",
+      "sha256": "54a0e83762fba2e5ca5e42335a6e9ab43d9a8044ed9e64c940c2c058c1c9243f",
       "bytes": 2436
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "d78634f9c3564355c3ae27b16f42e48065e9038cd009a560df9d4529f5c02e36",
+      "sha256": "712e1382c582a97e309746f543b7d5adc172cdd91cc115f405b4edaabb333d6d",
       "bytes": 1927
     },
     {
@@ -65,18 +65,18 @@
     },
     {
       "path": "trust/canary.txt",
-      "sha256": "e40b0069a1c75a72ef9f63e0bfd3ecf27cea3c6be9ebf6722073bd70e5b63175",
-      "bytes": 1677
+      "sha256": "1c9c8cf8c71bb8529635c6ea15602548df04ce0af17c860006af9a369aaba5bd",
+      "bytes": 1651
     },
     {
       "path": "trust/cryptographic-design.md",
-      "sha256": "6bdb4401c9616a0ed60e0c23b979704d4c97a2e2deaf85c48afa59681745d090",
-      "bytes": 4149
+      "sha256": "1934b30b63de4c088b1716dfd13c1bf8480445ea5d0f9b6a486030d6a20d6be5",
+      "bytes": 4057
     },
     {
       "path": "trust/reproducible-builds.md",
-      "sha256": "0f7be9bb86cf7e9c440864cdbad7bee41d5b6faff13d6a841dfd30b1efaf2feb",
-      "bytes": 3001
+      "sha256": "a8bf39fcef0845dc5e07a09b13da4b030fb490b705775664fe025e2f24496aab",
+      "bytes": 2708
     }
   ]
 }

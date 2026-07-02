@@ -47,6 +47,6 @@ Related public trust artifacts:
 - /trust/release-manifest.json
 - /trust/SHA256SUMS
 
-The source code used to build ETHOS is source-available to supporters with
-read-only private repository access. Supporters can additionally inspect the
+The source code used to build ETHOS is published on GitHub at
+https://github.com/aitherapp/ethos-core. Anyone can inspect the
 implementation and reproduce release builds against the public hashes.

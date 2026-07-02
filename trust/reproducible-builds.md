@@ -1,16 +1,15 @@
 # ETHOS Reproducible Builds
 
-ETHOS publishes release receipts so supporters with source access can rebuild
-the public web app and compare the output with the deployed release.
+ETHOS publishes release receipts so anyone can rebuild the public web app from
+source and compare the output with the deployed release.
 
-Public users can inspect the release manifest and SHA-256 sums. Supporters
-with read-only source access can additionally run the build from source and
-compare hashes.
+Source is published at https://github.com/aitherapp/ethos-core. Public users
+can inspect the release manifest and SHA-256 sums, run the build from source,
+and compare hashes.
 
-GitHub artifact attestations will be published when repository support is
-available. GitHub does not currently make this feature available for all
-private repository configurations, so the active verification path is the
-release manifest plus SHA-256 hash comparison.
+GitHub artifact attestations are published when repository support is available.
+The release manifest plus SHA-256 hash comparison is always the primary
+verification path.
 
 ## What To Verify
 
@@ -28,7 +27,7 @@ Node.js version, npm version, lockfile hash, and app artifact hashes.
 generated receipt files are excluded from the app hash set because they include
 release metadata that can differ between the official build and a local rebuild.
 
-## Supporter Verification Steps
+## Verification Steps
 
 From a clean checkout of the source revision named in
 `trust/release-manifest.json`:
@@ -56,10 +55,6 @@ artifact from a specific workflow run and repository context. They are useful
 release provenance, but they are not the same thing as a maintainer GPG
 signature or an independent security audit.
 
-If the source repository is private and GitHub rejects attestation creation,
-the deploy workflow skips the attestation step and publishes the release
-receipt files instead.
-
 Use attestations to answer:
 
 - Which workflow produced this artifact?
@@ -74,7 +69,7 @@ Do not use attestations to claim:
 
 ## If Hashes Do Not Match
 
-If a supporter rebuild does not match the public hashes:
+If a rebuild does not match the public hashes:
 
 1. Confirm the exact source revision from `release-manifest.json`.
 2. Confirm Node.js and npm versions.

@@ -93,7 +93,7 @@ The public web app publishes transparency artifacts that anyone can inspect:
 - Cryptographic design note.
 - Release manifest.
 - SHA-256 release hashes.
-- GitHub artifact attestations, when repository support is available.
+- GitHub artifact attestations for production releases built from the public repository.
 
 The source code is published on GitHub at https://github.com/aitherapp/ethos-core.
 Anyone can inspect the implementation and reproduce release builds using the

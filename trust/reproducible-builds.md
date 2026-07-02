@@ -5,11 +5,11 @@ source and compare the output with the deployed release.
 
 Source is published at https://github.com/aitherapp/ethos-core. Public users
 can inspect the release manifest and SHA-256 sums, run the build from source,
-and compare hashes.
+compare hashes, and verify GitHub artifact attestations for deployed releases.
 
-GitHub artifact attestations are published when repository support is available.
-The release manifest plus SHA-256 hash comparison is always the primary
-verification path.
+The release manifest plus SHA-256 hash comparison is the primary verification
+path. GitHub artifact attestations add signed CI provenance for the same
+release files.
 
 ## What To Verify
 
@@ -17,11 +17,12 @@ Each public release should include:
 
 - `trust/release-manifest.json`
 - `trust/SHA256SUMS`
-- A GitHub artifact attestation for the release artifact, when repository
-  support is available
+- A GitHub artifact attestation for the release files, linked from
+  `release-manifest.json` under `provenance.githubArtifactAttestation`
 
 The release manifest records the source revision, GitHub Actions run metadata,
-Node.js version, npm version, lockfile hash, and app artifact hashes.
+Node.js version, npm version, lockfile hash, app artifact hashes, and the
+attestation URL when CI publishes one.
 
 `SHA256SUMS` records deterministic hashes for files in the built app. The
 generated receipt files are excluded from the app hash set because they include
@@ -48,10 +49,28 @@ diff -u dist/trust/SHA256SUMS path/to/public-release/trust/SHA256SUMS
 If the app artifact hashes match, the local source rebuild produced the same
 public app files as the release receipt.
 
-## GitHub Attestations
+## GitHub Artifact Attestations
 
-GitHub artifact attestations prove that GitHub Actions produced a named build
-artifact from a specific workflow run and repository context. They are useful
+Each production deploy from the public `ethos-core` repository creates a signed
+SLSA build provenance attestation for the files listed in `trust/SHA256SUMS`.
+The attestation is stored by GitHub and linked from
+`trust/release-manifest.json`.
+
+To verify a deployed release with the GitHub CLI, download or clone the public
+app files, `cd` to the app root (the directory that contains `trust/SHA256SUMS`),
+then verify each release file listed in the checksum receipt:
+
+```bash
+while read -r digest file; do
+  gh attestation verify "$file" --repo aitherapp/ethos-core
+done < trust/SHA256SUMS
+```
+
+You can also open the attestation URL recorded in `release-manifest.json` to
+inspect the workflow run, repository, and commit that produced the release.
+
+GitHub artifact attestations prove that GitHub Actions produced the named build
+artifacts from a specific workflow run and repository context. They are useful
 release provenance, but they are not the same thing as a maintainer GPG
 signature or an independent security audit.
 

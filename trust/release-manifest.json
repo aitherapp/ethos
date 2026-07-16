@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-07T17:36:58.375Z",
+  "generatedAt": "2026-07-16T18:03:54.106Z",
   "source": {
     "repository": "aitherapp/ethos-core",
-    "commit": "86d06cba9c0ccb31855ed20f379b90569d703544",
+    "commit": "d12725597ad69cc26bac47e2d43bad6b547f89ed",
     "ref": "main"
   },
   "build": {
     "node": "v20.20.2",
     "npm": "10.8.2",
-    "runId": "28885830092",
+    "runId": "29522271765",
     "runAttempt": "1",
-    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/28885830092"
+    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/29522271765"
   },
   "lockfile": {
     "path": "package-lock.json",
@@ -81,8 +81,8 @@
   ],
   "provenance": {
     "githubArtifactAttestation": {
-      "id": "34259045",
-      "url": "https://github.com/aitherapp/ethos-core/attestations/34259045",
+      "id": "35699516",
+      "url": "https://github.com/aitherapp/ethos-core/attestations/35699516",
       "repository": "aitherapp/ethos-core",
       "verifyCommand": "while read -r digest file; do gh attestation verify \"$file\" --repo aitherapp/ethos-core; done < trust/SHA256SUMS"
     }

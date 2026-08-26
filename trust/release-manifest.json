@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T14:59:15.953Z",
+  "generatedAt": "2026-08-26T12:23:27.588Z",
   "source": {
     "repository": "aitherapp/ethos-core",
-    "commit": "851472425a1710837152be33f55e9fe6b7bf9438",
+    "commit": "ee999621406ef41801232355150289da75a3642e",
     "ref": "v3.1.72"
   },
   "build": {
     "node": "v20.20.2",
     "npm": "10.8.2",
-    "runId": "32862779720",
+    "runId": "32968159581",
     "runAttempt": "1",
-    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/32862779720"
+    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/32968159581"
   },
   "lockfile": {
     "path": "package-lock.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "trust/canary.txt",
-      "sha256": "d35ee3fffbf31cdd5c2b725cd9fef3bd39903f0b35b67d5e29868530b6b23d66",
-      "bytes": 1704
+      "sha256": "459aedaa7c6c4167067724e6dae431bc4583796ad0c263b646c455b1cf5b2585",
+      "bytes": 1703
     },
     {
       "path": "trust/cryptographic-design.md",
@@ -81,8 +81,8 @@
   ],
   "provenance": {
     "githubArtifactAttestation": {
-      "id": "42883619",
-      "url": "https://github.com/aitherapp/ethos-core/attestations/42883619",
+      "id": "43123863",
+      "url": "https://github.com/aitherapp/ethos-core/attestations/43123863",
       "repository": "aitherapp/ethos-core",
       "verifyCommand": "while read -r digest file; do gh attestation verify \"$file\" --repo aitherapp/ethos-core; done < trust/SHA256SUMS"
     }

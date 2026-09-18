@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ethos-v3.1.76'; // Increment for cache busting
+const CACHE_NAME = 'ethos-v3.1.77'; // Increment for cache busting
 const ASSETS = [
   './',
   './index.html',
@@ -62,6 +62,18 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
       return response || fetch(event.request);
+    })
+  );
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+      for (const client of clientList) {
+        if ('focus' in client) return client.focus();
+      }
+      if (clients.openWindow) return clients.openWindow('./');
     })
   );
 });

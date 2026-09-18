@@ -1,1 +1,0 @@
-import{t as e}from"./App-BOYiup3L.js";export default e();

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ethos-v3.1.83'; // Increment for cache busting
+const CACHE_NAME = 'ethos-v3.1.84'; // Increment for cache busting
 const ASSETS = [
   './',
   './index.html',
@@ -75,5 +75,27 @@ self.addEventListener('notificationclick', (event) => {
       }
       if (clients.openWindow) return clients.openWindow('./');
     })
+  );
+});
+
+self.addEventListener('push', (event) => {
+  let data = { title: 'New Message', body: 'You received a new E2EE message in ETHOS.' };
+  if (event.data) {
+    try {
+      data = event.data.json();
+    } catch {
+      data.body = event.data.text();
+    }
+  }
+
+  const options = {
+    body: data.body || 'New message in ETHOS',
+    icon: './ethos-icon.svg',
+    badge: './ethos-icon.svg',
+    data: data.data || { url: './' },
+  };
+
+  event.waitUntil(
+    self.registration.showNotification(data.title || 'ETHOS', options)
   );
 });

@@ -1,1 +1,0 @@
-import{t as e}from"./App-BClRI-uq.js";export default e();

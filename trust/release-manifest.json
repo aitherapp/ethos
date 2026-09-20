@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T01:24:39.288Z",
+  "generatedAt": "2026-09-20T01:32:58.801Z",
   "source": {
     "repository": "aitherapp/ethos-core",
-    "commit": "cae63f84228b5f462f9fbb5c3d57d03c7a57f0e5",
-    "ref": "v3.1.98"
+    "commit": "e5405dfd868d2cea8942e77438f8f35777310769",
+    "ref": "v3.1.99"
   },
   "build": {
     "node": "v20.20.2",
     "npm": "10.8.2",
-    "runId": "35481293196",
+    "runId": "35481651080",
     "runAttempt": "1",
-    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/35481293196"
+    "runUrl": "https://github.com/aitherapp/ethos-core/actions/runs/35481651080"
   },
   "lockfile": {
     "path": "package-lock.json",
-    "sha256": "e197d60b1052d43154f1b476cd22f75f34584a6b688995053c2a16ceef57e3a4"
+    "sha256": "1e97d1da9bb6d5c50abb46c31f7bae4dfc205994cba5c0a2ff7d4259b83ee984"
   },
   "artifacts": [
     {
-      "path": "assets/__vite-browser-external-l5SYdxX5.js",
-      "sha256": "822a445bc79674b7e9fb1a0714ca8ab5c5c6a8cfbc167cc89e8cb886af29b405",
+      "path": "assets/__vite-browser-external-DdHbGnmj.js",
+      "sha256": "130131a7bbcafe1e5929279dd8ca265dcfce73a8ff398df3ecdd6db8a67dddea",
       "bytes": 57
     },
     {
-      "path": "assets/App-BU-nrvbX.js",
-      "sha256": "19d9b141f5cb872fd369c6b04cc3644982c86be10afeee1f5f5b21fc7b5d79a4",
-      "bytes": 1099787
+      "path": "assets/App-BtEZw1P6.js",
+      "sha256": "c200e7dbc4227092b651e6895fb666619ec6f97b192d7d591f7169391603cad8",
+      "bytes": 1100164
     },
     {
       "path": "assets/index-2UahPxXT.css",
@@ -34,8 +34,8 @@
       "bytes": 54998
     },
     {
-      "path": "assets/index-mST7vDQW.js",
-      "sha256": "181b80469cba25f32d3f9ae41d8523fc09a946655ec6b9c4cea3f7662cd251c5",
+      "path": "assets/index-Bb5gADfF.js",
+      "sha256": "cdf500490fd977c5fba21d39eff9ef0aff2652c33dfc6462b1bf702b5265f9b1",
       "bytes": 270214
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "bfc6538aac2964a189157a354764fe69840a536b520f6752ea01f61af3e78d46",
+      "sha256": "6f642b6166c21cb5ac23039beb4329ad30005ea3639e981ea9d031f4ee86ab5e",
       "bytes": 2650
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "ff58941788eb66a6a62ec3ff83961b4f8a4c41ee554e65f2942ca4bac7286b08",
+      "sha256": "240b4416f6385884ee5b6898358cbb8298b0210ecbcda0cdee21d7f28f85eb84",
       "bytes": 4444
     },
     {
@@ -80,14 +80,14 @@
     },
     {
       "path": "widget.js",
-      "sha256": "9d065227bc9bf69a7413778980e42182b43255e381780f1b87829421753e47f1",
+      "sha256": "8135f2fc0db84166f2d1289cdad315284fdd0c8e11f4c66795d9697ce114db3c",
       "bytes": 522278
     }
   ],
   "provenance": {
     "githubArtifactAttestation": {
-      "id": "48701971",
-      "url": "https://github.com/aitherapp/ethos-core/attestations/48701971",
+      "id": "48702609",
+      "url": "https://github.com/aitherapp/ethos-core/attestations/48702609",
       "repository": "aitherapp/ethos-core",
       "verifyCommand": "while read -r digest file; do gh attestation verify \"$file\" --repo aitherapp/ethos-core; done < trust/SHA256SUMS"
     }

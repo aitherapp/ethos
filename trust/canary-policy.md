@@ -12,8 +12,8 @@ malicious build, or hide a privacy compromise.
 
 ## Update Schedule
 
-The canary is updated weekly. Each update should change the statement date
-and the expected next update date.
+The canary is updated every 14 days. Each update should change the statement
+date and the expected next update date (statement date + 14 days).
 
 If the canary is late, missing, rewritten in a materially weaker way, or
 removed without a clear public explanation, users should treat that as a
